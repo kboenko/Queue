@@ -32,8 +32,25 @@ const rotate = require('./utils/rotateQueue');
 
   console.log(sq);
 
+  console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&');
+
   sq.dequeue();
 
   console.log(sq);
+  console.log('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
+
+  sq.dequeue();
+
+  console.log(sq);
+
+  sq.enqueue(7);
+
+  console.log(sq);
+
+  console.log('999999999999999999999999999999999999999999')
+
+  sq.dequeue();
+
+  console.log(sq)
 
 })();

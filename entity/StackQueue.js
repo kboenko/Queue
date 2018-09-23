@@ -16,15 +16,14 @@ class StackQueue {
   }
 
   dequeue() {
-    while (this.storage.size() !== 1) {
-      this.temp.push(this.storage.pop());
+
+    if (this.temp.size() === 0) {
+      while (this.storage.size() > 0) {
+        this.temp.push(this.storage.pop());
+      }
     }
 
-    this.storage.pop();
-
-    while (this.temp.size() !== 0) {
-      this.storage.push(this.temp.pop());
-    }
+    return this.temp.pop();
   }
 }
 
