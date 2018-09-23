@@ -13,7 +13,9 @@ class Stack {
   }
 
   pop() {
+    let last = this.storage[this.storage.length - 1];
     this.storage.pop();
+    return last;
   }
 
   peek() {
